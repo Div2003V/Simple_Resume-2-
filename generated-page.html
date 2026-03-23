@@ -1,0 +1,476 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Verma - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:wght@400&amp;display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .font-museum {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e4e4e7; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a1a1aa; 
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white min-h-screen relative overflow-x-hidden">
+
+    <!-- Ambient Audio Setup -->
+    <audio id="bgMusic" loop="" preload="auto">
+        <source src="https://cdn.pixabay.com/download/audio/2022/02/10/audio_fc8cb9b596.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" class="fixed bottom-8 right-8 z-50 p-4 bg-white ring-1 ring-zinc-200 shadow-xl rounded-full text-black hover:bg-zinc-50 transition-all duration-300 flex items-center justify-center group" aria-label="Toggle Music">
+        <i data-lucide="music" stroke-width="1.5" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+    </button>
+
+    <main class="max-w-5xl mx-auto px-6 sm:px-12 py-24 sm:py-32 space-y-32">
+        
+        <!-- Header -->
+        <header class="space-y-8 animate-fade-in">
+            <div>
+                <h1 class="text-4xl sm:text-6xl font-museum font-normal tracking-tight text-black uppercase">Divyansh Verma</h1>
+                <p class="text-xl sm:text-2xl text-zinc-500 mt-4 max-w-2xl leading-relaxed font-light">
+                    Architecting intelligent systems and scalable web applications. Bridging the gap between full-stack engineering and artificial intelligence.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-x-8 gap-y-4 text-lg text-zinc-500 font-light">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="map-pin" stroke-width="1.5" class="w-4 h-4"></i>
+                    New Delhi, India
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="phone" stroke-width="1.5" class="w-4 h-4"></i>
+                    +91 88517 49084
+                </span>
+                <a href="mailto:divyansh.260903@gmail.com" class="flex items-center gap-2 hover:text-black transition-colors">
+                    <i data-lucide="mail" stroke-width="1.5" class="w-4 h-4"></i>
+                    divyansh.260903@gmail.com
+                </a>
+            </div>
+
+            <div class="flex gap-6 text-zinc-400">
+                <a href="https://github.com/Div2003V" target="_blank" class="hover:text-black transition-colors">
+                    <i data-lucide="github" stroke-width="1.5" class="w-6 h-6"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/divyansh-verma-5aba342" target="_blank" class="hover:text-black transition-colors">
+                    <i data-lucide="linkedin" stroke-width="1.5" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Museum Gallery Style Experience Section -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-museum tracking-tight uppercase text-black border-b border-zinc-200 pb-4">Professional Canvas</h2>
+            
+            <div class="flex flex-col">
+                <!-- Revino -->
+                <article class="group relative overflow-hidden border-b border-zinc-100 py-10 transition-all duration-700 hover:px-6">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">Present</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">AI Automation &amp; FSD Intern <span class="text-zinc-400 text-lg font-sans ml-2 tracking-normal">(Incoming PPO)</span></h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">Revino • Rohini Sector 25</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                Spearheading AI automation initiatives, DevOps, and cloud computing operations. Developing end-to-end SaaS solutions and backend APIs leveraging the MERN stack and Machine Learning integrations.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Codectechnologies -->
+                <article class="group relative overflow-hidden border-b border-zinc-100 py-10 transition-all duration-700 hover:px-6">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">Present</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">Full Stack Development Intern</h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">Codectechnologies</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                Enrolled in a rigorous 4-month program architecting scalable web applications, optimizing database performance, and building responsive user interfaces.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ElevatHub -->
+                <article class="group relative overflow-hidden border-b border-zinc-100 py-10 transition-all duration-700 hover:px-6">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">01/2025 — 09/2025</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">President</h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">ElevatHub – Placement &amp; Internship Society</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                President of Elevat Hub (Placement and Internship Society), by MAIT - IT department.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- IBM -->
+                <article class="group relative overflow-hidden border-b border-zinc-100 py-10 transition-all duration-700 hover:px-6">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">07/2025 — 08/2025</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">Monsoon Intern</h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">IBM • Remote</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                AI Agent dev. training + Various other AI related courses. Engineered and deployed intelligent AI agents tailored for complex business use cases.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Maruti Suzuki -->
+                <article class="group relative overflow-hidden border-b border-zinc-100 py-10 transition-all duration-700 hover:px-6">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">08/2024 — 09/2024</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">Summer Intern</h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">Maruti Suzuki India Limited • Gurugram, Haryana, India · On-site</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                FullStack Project Intern... (Worked on 'TaxiRental' project). Built a comprehensive MERN-stack proof-of-concept for a vast taxi rental infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- C-DOT -->
+                <article class="group relative overflow-hidden border-b border-zinc-100 py-10 transition-all duration-700 hover:px-6">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">07/2024 — 08/2024</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">Development Intern</h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">Centre for Development of Telematics (C-DOT) • New Delhi, Delhi, India · On-site</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                Data Analyst Intern... Optimized data processing logic and visualized performance metrics using contemporary web development tools.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Arc of Code -->
+                <article class="group relative overflow-hidden py-10 transition-all duration-700 hover:px-6 border-b border-zinc-100">
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700 ease-out pointer-events-none bg-black">
+                        <video src="https://cdn.coverr.co/videos/coverr-abstract-waves-in-black-and-white-5443/1080p.mp4" autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover grayscale"></video>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                        <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">03/2023 — 05/2023</div>
+                        <div>
+                            <h3 class="text-2xl font-museum tracking-tight text-black mb-1">Freelance Web Content Writer</h3>
+                            <div class="text-lg text-zinc-500 mb-6 font-light">Arc of Code</div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                Authored in-depth, technical Data Structures and Algorithms content in Python for an ed-tech startup, simplifying complex algorithmic paradigms for vast audiences.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Technical Arsenal / Skills Section -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-museum tracking-tight uppercase text-black border-b border-zinc-200 pb-4">Skills &amp; Proficiencies</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12">
+                
+                <div class="space-y-5">
+                    <h3 class="text-sm font-medium text-black uppercase tracking-widest border-b border-zinc-100 pb-2">Languages</h3>
+                    <ul class="space-y-3 text-lg text-zinc-600 font-light">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML5 &amp; CSS</li>
+                        <li class="pt-4 text-sm text-zinc-400 uppercase tracking-widest">Spoken</li>
+                        <li>English <span class="text-zinc-400 text-sm ml-1">(Proficient)</span></li>
+                        <li>Hindi <span class="text-zinc-400 text-sm ml-1">(Proficient)</span></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-5">
+                    <h3 class="text-sm font-medium text-black uppercase tracking-widest border-b border-zinc-100 pb-2">Technologies &amp; AI</h3>
+                    <ul class="space-y-3 text-lg text-zinc-600 font-light">
+                        <li>Artificial Intelligence (AI)</li>
+                        <li>AI Automation</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>n8n</li>
+                        <li>MERN Stack</li>
+                        <li>React.js</li>
+                        <li>DevOps</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-5">
+                    <h3 class="text-sm font-medium text-black uppercase tracking-widest border-b border-zinc-100 pb-2">Data &amp; Architecture</h3>
+                    <ul class="space-y-3 text-lg text-zinc-600 font-light">
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>Database Management</li>
+                        <li>pandas</li>
+                        <li>NumPy</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-5">
+                    <h3 class="text-sm font-medium text-black uppercase tracking-widest border-b border-zinc-100 pb-2">Tools &amp; Soft Skills</h3>
+                    <ul class="space-y-3 text-lg text-zinc-600 font-light">
+                        <li>Adobe Premiere Pro</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Microsoft Office</li>
+                        <li>Public Speaking</li>
+                        <li>Team Management</li>
+                        <li>Content Creation</li>
+                        <li>Web Content Writing</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Selected Works / Projects -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-museum tracking-tight uppercase text-black border-b border-zinc-200 pb-4">Selected Works</h2>
+            
+            <div class="space-y-16">
+                <!-- Project: Basic RAG -->
+                <div class="group relative block">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-3 mb-2">
+                        <h3 class="text-2xl font-museum tracking-tight text-black group-hover:italic transition-all duration-300">
+                            <a href="https://github.com/Div2003V/RagWork" target="_blank" class="hover:text-zinc-600 transition-colors">Basic RAG</a>
+                        </h3>
+                    </div>
+                    <a href="https://github.com/Div2003V/RagWork" target="_blank" class="text-lg text-zinc-400 font-light hover:underline underline-offset-4 decoration-zinc-200 block mb-5">github.com/Div2003V/RagWork</a>
+                    
+                    <div class="flex flex-wrap gap-4 border-l border-zinc-200 pl-4">
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">Retrieval-Augmented Generation (RAG)</span>
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">n8n</span>
+                    </div>
+                </div>
+
+                <!-- Project: BioPredictX -->
+                <div class="group relative block">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-3 mb-2">
+                        <h3 class="text-2xl font-museum tracking-tight text-black group-hover:italic transition-all duration-300">
+                            <a href="https://github.com/Div2003V/BIOPREDICTX" target="_blank" class="hover:text-zinc-600 transition-colors">BioPredictX</a>
+                        </h3>
+                    </div>
+                    <a href="https://github.com/Div2003V/BIOPREDICTX" target="_blank" class="text-lg text-zinc-400 font-light hover:underline underline-offset-4 decoration-zinc-200 block mb-5">github.com/Div2003V/BIOPREDICTX</a>
+                    
+                    <div class="flex flex-wrap gap-4 border-l border-zinc-200 pl-4">
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">SQL</span>
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">Databases</span>
+                    </div>
+                </div>
+
+                <!-- Project: IEM -->
+                <div class="group relative block">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-3 mb-2">
+                        <h3 class="text-2xl font-museum tracking-tight text-black group-hover:italic transition-all duration-300">
+                            <a href="https://github.com/Div2003V/Inborn-Errors-of-Metabolism-IEM-" target="_blank" class="hover:text-zinc-600 transition-colors">Inborn Errors of Metabolism Prediction System <span class="text-lg font-sans font-light text-zinc-400 italic normal-case tracking-normal ml-2">(Still in Works...)</span></a>
+                        </h3>
+                    </div>
+                    <a href="https://github.com/Div2003V/Inborn-Errors-of-Metabolism-IEM-" target="_blank" class="text-lg text-zinc-400 font-light hover:underline underline-offset-4 decoration-zinc-200 block mb-5 truncate max-w-full">github.com/Div2003V/Inborn-Errors-of-Metabolism-IEM-</a>
+                    
+                    <div class="flex flex-wrap gap-4 border-l border-zinc-200 pl-4">
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">Python (Programming Language)</span>
+                    </div>
+                </div>
+
+                <!-- Project: VarityCheck -->
+                <div class="group relative block">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-3 mb-2">
+                        <h3 class="text-2xl font-museum tracking-tight text-black group-hover:italic transition-all duration-300">
+                            <a href="https://github.com/Div2003V/VarityCheck" target="_blank" class="hover:text-zinc-600 transition-colors">VarityCheck</a>
+                        </h3>
+                    </div>
+                    <a href="https://github.com/Div2003V/VarityCheck" target="_blank" class="text-lg text-zinc-400 font-light hover:underline underline-offset-4 decoration-zinc-200 block mb-5">github.com/Div2003V/VarityCheck</a>
+                    
+                    <div class="flex flex-wrap gap-4 border-l border-zinc-200 pl-4">
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">pandas</span>
+                        <span class="text-sm font-normal text-zinc-600 uppercase tracking-widest">NumPy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Artifacts -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-museum tracking-tight uppercase text-black border-b border-zinc-200 pb-4">Achievements &amp; Artifacts</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
+                
+                <div class="space-y-4 relative group cursor-crosshair">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Hackathon</div>
+                    <h3 class="text-xl font-normal text-black">2nd Position, MAITHacks 2023</h3>
+                    <p class="text-lg text-zinc-500 font-light leading-relaxed">Competed against top engineering minds, delivering a rapid-prototyped solution that secured podium finish.</p>
+                </div>
+
+                <div class="space-y-4 relative group cursor-crosshair">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Media</div>
+                    <h3 class="text-xl font-normal text-black">Tech Content Creator</h3>
+                    <p class="text-lg text-zinc-500 font-light leading-relaxed">Managing a YouTube channel since February 2021, documenting coding journeys and technological explorations.</p>
+                </div>
+
+                <div class="space-y-4 relative group cursor-crosshair">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Problem Solving</div>
+                    <h3 class="text-xl font-normal text-black">LeetCode Excellence</h3>
+                    <p class="text-lg text-zinc-500 font-light leading-relaxed">140+ Solved questions on LeetCode (beats 85%), demonstrating algorithmic proficiency.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Licenses & Certifications -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-museum tracking-tight uppercase text-black border-b border-zinc-200 pb-4">Licenses &amp; Certifications</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+                
+                <div class="space-y-3 relative group">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Oct 2025</div>
+                    <h3 class="text-xl font-normal text-black leading-snug">Career Excellence Program 2025-26</h3>
+                    <p class="text-lg text-zinc-500 font-light">IBM</p>
+                </div>
+
+                <div class="space-y-3 relative group">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Apr 2025</div>
+                    <h3 class="text-xl font-normal text-black leading-snug">Python Bootcamp</h3>
+                    <p class="text-lg text-zinc-500 font-light">Simplilearn</p>
+                </div>
+
+                <div class="space-y-3 relative group">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Mar 2025</div>
+                    <h3 class="text-xl font-normal text-black leading-snug">Software Engineering Job Simulation</h3>
+                    <p class="text-lg text-zinc-500 font-light">JP Morgan Chase &amp; Co</p>
+                </div>
+
+                <div class="space-y-3 relative group">
+                    <div class="text-sm text-zinc-400 uppercase tracking-widest">Mar 2025</div>
+                    <h3 class="text-xl font-normal text-black leading-snug">Java Data Structures and Algorithms Masterclass</h3>
+                    <p class="text-lg text-zinc-500 font-light">Udemy</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education (Replaced 3D Neural Network Section) -->
+        <section class="space-y-12 pt-16 border-t border-zinc-200">
+            <h2 class="text-2xl font-museum tracking-tight uppercase text-black border-b border-zinc-200 pb-4">Education</h2>
+            
+            <div class="space-y-12">
+                <!-- MAIT -->
+                <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 group">
+                    <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">Nov 2022 — Jun 2026</div>
+                    <div>
+                        <h3 class="text-2xl font-museum tracking-tight text-black mb-1">Bachelor of Technology - BTech, Information Technology</h3>
+                        <div class="text-lg text-zinc-500 mb-5 font-light">Maharaja Agrasen Institute of Technology, Delhi</div>
+                        
+                        <div class="space-y-5">
+                            <div class="inline-flex items-center border border-zinc-200 px-3 py-1.5 rounded text-sm text-zinc-600 font-light bg-zinc-50/50">
+                                Grade: 8.11 CGPA, (Till 7th Semester)
+                            </div>
+                            <p class="text-lg text-zinc-600 leading-relaxed font-light">
+                                Bachelor of Technology in Information Technology with a specialization in Full Stack Development
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="inline-flex items-center gap-1.5 border border-zinc-200 px-3 py-1 rounded-full text-xs text-zinc-600 font-light uppercase tracking-widest bg-white">
+                                    <i data-lucide="diamond" stroke-width="1.5" class="w-3 h-3"></i>
+                                    Java
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DPS -->
+                <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 group">
+                    <div class="text-sm tracking-widest text-zinc-400 uppercase mt-1">Mar 2013 — May 2022</div>
+                    <div>
+                        <h3 class="text-2xl font-museum tracking-tight text-black mb-1">High School Diploma</h3>
+                        <div class="text-lg text-zinc-500 mb-5 font-light">Delhi Public School Mathura Road</div>
+                        
+                        <div class="space-y-5">
+                            <div class="inline-flex items-center border border-zinc-200 px-3 py-1.5 rounded text-sm text-zinc-600 font-light bg-zinc-50/50">
+                                Grade: 12th (PCM + IT) - 71.8% (2022), 10th - 85.5% (2020)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 text-center border-t border-zinc-100">
+            <p class="text-lg text-zinc-400 font-light">© 2026 Divyansh Verma. Designed as a digital exhibition.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Ambient Music Toggle Logic
+        const musicToggle = document.getElementById('musicToggle');
+        const bgMusic = document.getElementById('bgMusic');
+        let isPlaying = false;
+
+        musicToggle.addEventListener('click', () => {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicToggle.innerHTML = '<i data-lucide="volume-x" stroke-width="1.5" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>';
+            } else {
+                bgMusic.volume = 0.3;
+                bgMusic.play().catch(e => console.log("Audio play blocked by browser. User interaction required."));
+                musicToggle.innerHTML = '<i data-lucide="music" stroke-width="1.5" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>';
+            }
+            lucide.createIcons();
+            isPlaying = !isPlaying;
+        });
+    </script>
+
+</body></html>
